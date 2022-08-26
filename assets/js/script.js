@@ -11,7 +11,6 @@ xhttp.onload = function () {
   var data = JSON.parse(this.response);
   for (var i = initial; i < count; i++) {
     apiList.innerHTML += `<li class="api-list-item">
-                        <p class="data api-id" style="width: 60px;">${data[i].id}</p>
                         <p class="data api-title">${data[i].title}</p>
                         <p class="data api-description">${data[i].body}</p>
                       </li>`;
@@ -34,7 +33,6 @@ function showData(initial, count) {
         fetchButton.classList.add("display-none");
       }
       apiList.innerHTML += `<li class="api-list-item">
-                              <p class="data api-id" style="width: 60px;">${data[i].id}</p>
                               <p class="data api-title">${data[i].title}</p>
                               <p class="data api-description">${data[i].body}</p>
                             </li>`;
